@@ -10,9 +10,6 @@ export default function Home() {
     if (natively) {
       const nativelyInfo = new natively.features.NativelyInfo();
       console.log(nativelyInfo.browserInfo());
-
-      // Access Natively type properties or methods
-      // console.log(natively.Natively.someMethod());
     }
   }, [natively]);
 

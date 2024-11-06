@@ -1,8 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 'use client';
 
-import { useNatively } from "./useNatively";
-
+import { useNatively } from "natively/useNatively";
 
 export default function Home() {
   // Initialize services

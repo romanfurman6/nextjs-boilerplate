@@ -1,15 +1,21 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 'use client';
-import useNatively from 'natively/module/useNatively';
 import { useEffect } from 'react';
+import useNatively from 'natively/useNatively';
+import { NativelyInfo } from 'natively';
+
 
 export default function Home() {
-  const natively = useNatively();
 
+  const natively = useNatively();
+  const nativelyInfo = new NativelyInfo();
+  console.log(nativelyInfo.browserInfo());
+  // window.natively.isAndroidApp();
   useEffect(() => {
     if (natively) {
-      const nativelyInfo = new natively.features.NativelyInfo();
-      console.log(nativelyInfo.browserInfo());
+      // const nativelyInfo = new NativelyInfo();
+      
+      natively?.openConsole()
     }
   }, [natively]);
 

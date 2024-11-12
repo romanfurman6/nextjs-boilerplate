@@ -12,9 +12,9 @@ export default function Home() {
   };
   console.log(browserInfo);
   return (
-    <div>
-      Check the console for browser info. isNativeApp: {browserInfo.isNativeApp ? "true" : "false"}
+    <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+      <text>Check the console for browser info. isNativeApp: {browserInfo.isNativeApp ? "true" : "false"}</text>
       <button onClick={openConsole}>Open Console</button>
-    </div>
+    </div>  
   );
-};
+}

@@ -1,6 +1,5 @@
 'use client';
-import useNatively from 'natively/useNatively';
-import { NativelyInfo } from 'natively';
+import { NativelyInfo, useNatively } from 'natively';
 
 export default function Home() {
 
